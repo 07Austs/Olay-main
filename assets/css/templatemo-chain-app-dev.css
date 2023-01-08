@@ -208,7 +208,7 @@ body {
 .white-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #4b8ef1 !important;
+  color: #136902 !important;
   text-transform: capitalize;
   font-size: 15px;
   background-color: #fff;
@@ -224,7 +224,7 @@ body {
 }
 
 .white-button a:hover {
-  background-color: #4b8ef1;
+  background-color: #199e22;
   color: #fff !important;
 }
 
@@ -952,7 +952,7 @@ Banner Style
 }
 
 .main-banner .left-content .white-button a {
-  background-color: #4b8ef1;
+  background-color: #088812;
   color: #fff !important;
 }
 
@@ -1990,7 +1990,7 @@ responsive
     margin-right: 0;
   }
   .main-banner .left-content .white-button a {
-    background-color: #4b8ef1;
+    background-color: #079607;
     color: #fff !important;
   }
   form#contact {
