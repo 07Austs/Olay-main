@@ -358,7 +358,7 @@ header
 }
 
 .header-area .main-nav .logo {
-    line-height: 150px;
+    line-height: 1px;
     float: left;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -678,12 +678,9 @@ header
   }
   .header-area .main-nav .logo {
     color: #1e1e1e;
+    
   }
-  .header-area.header-sticky .nav li a:hover,
-  .header-area.header-sticky .nav li a.active {
-    color: #4b8ef1!important;
-    opacity: 1;
-  }
+
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
@@ -948,7 +945,7 @@ Banner Style
 }
 
 .main-banner .right-image img {
-  max-width: 710px;
+  max-width: 800px;
 }
 
 .main-banner .left-content .white-button a {
@@ -1627,11 +1624,16 @@ footer #search button:hover {
   background-color: #fff;
   color: #4b8ef1;
 }
-
-.footer-widget .logo img {
-  max-width: 96px;
-  margin-bottom: 30px;
+.footerLogo{
+  width: 150px;
+  height: 150px;
 }
+.footer-widget .logo .footer_logo{
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: fit-content;
+  width: 300px;
+}
+
 
 .footer-widget h4 {
   font-size: 20px;
@@ -1797,22 +1799,34 @@ a.btn_red {
   background: #F4F4F2;
   overflow: hidden;
 }
+.g-signin2 {
+  height: 50px;
+  background-color: rgb(198, 198, 198);
+  text-align: center;
+}
+.social_login .g-signin2{
+   align-content: flex-start;
+}
+.fa-google::before{
+  background: red;
+  vertical-align: middle;
+  align-content: flex-start;
+  width: 30px;
+  height: px;
+}
 
 .social_login .icon {
   display: inline-block;
-  
   padding: 5px 10px;
   margin-right: 10px;
-  float: left;
+  float:  left;   
   color: #FFF;
   font-size: 16px;
   text-align: center;
 }
 
-.social_login .fb .icon {
-  background: #3B5998;
-}
 
+ 
 .social_login .google .icon {
   background: #DD4B39;
 }
