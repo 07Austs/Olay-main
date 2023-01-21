@@ -1,5 +1,8 @@
 body{
     padding: 0px;
+    background-image: url(../images/slider-left-dec.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 *{
   margin: 0;
@@ -28,31 +31,15 @@ header{
 }
 
 #payment_body{
-    height: 1121px;
-    background-image: url(../images/slider-left-dec.png);
-    background-repeat: no-repeat;
-    background-size: inherit;
+    height: fit-content;
     overflow: hidden;
     
 }
 
-#payment_body::before{
-    height: 1121px;
-    background-image: url(../images/slider-left-dec.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-}
 
-#payment_body::after{
-    height: 1121px;
-    background-image: url(../images/slider-left-dec.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    
-}
 
 .payment_body-text{
+    height: fit-content;
    text-align: center;
    font-weight: bold;
    text-decoration: none;
@@ -63,7 +50,7 @@ header{
 }
 
 section{
-    height: 400px;
+    height: fit-content;
     padding: 10px;
 }
 .payment-methods{
@@ -95,12 +82,39 @@ section{
     padding: 13px;
     font-weight: normal;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: initial;
-
-
-
-    
+    font-size: initial;    
 }
+.instruction-Colmn{
+    min-height: 700px;
+    width: inherit;
+}
+
+.split-colmn{
+    width: inherit;
+    height: 600px;
+    padding: 2px;
+    display: flex;
+}
+ .contents{
+    width: 50%;
+    height: auto;
+    align-items: center;
+
+ }
+
+ ul li {
+    list-style: none;
+    padding: 30px;
+    text-align: center;
+    text-decoration: solid;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+ }
+
+
+
+
+
 #package_footer{
     max-width: inherit;
     height: inherit;
