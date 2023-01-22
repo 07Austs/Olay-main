@@ -3,15 +3,15 @@ from requests.auth import HTTPBasicAuth
 import base64
 import datetime
 import requests
+import pymysql
 from flask import Flask
+
 import os #For dealing with the operating system folde
 
 app = Flask(__name__)
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(APP_ROOT, 'static/img')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
-
 
 
 @app.route("/mpesa_payment",methods=['GET','POST'])
@@ -68,6 +68,8 @@ def mpesa():
     else:
         return "Method was not POST. Do not access this route directly"
 
+def makeConn():
+    return pymysql.connect(host="localhost",user="root",database="pie_ron_admin")
 
 if __name__ == '__main__':
     app.run(debug=True)
