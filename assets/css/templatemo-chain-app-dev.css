@@ -304,6 +304,16 @@ header
 .background-header .main-nav .nav li a {
   color: #fff;
 }
+.logoname {
+  padding: 1px;
+  height: 100px;
+  width: 168px;
+}
+.brandlogo{
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+}
 
 .background-header .main-nav .nav li:hover a {
   color: #4b8ef1;
